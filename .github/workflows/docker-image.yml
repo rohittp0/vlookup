@@ -4,11 +4,10 @@ on:
   push:
     branches:
       - main
-      - master
-      - dtl-fix
+
     paths:
-      - '**/Dockerfile'
-      - '**/requirements.txt'
+      - 'src/Dockerfile'
+      - 'src/requirements.txt'
   workflow_dispatch:
 
 jobs:
@@ -17,10 +16,8 @@ jobs:
     strategy:
       matrix:
         include:
-          - image: rohittp0/vanswer-server
-            folder: server
           - image: rohittp0/vanswer-vector
-            folder: vector
+            folder: src
     steps:
       - name: Checkout code
         uses: actions/checkout@v3

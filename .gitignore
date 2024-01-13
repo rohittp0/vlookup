@@ -2,16 +2,9 @@ venv/
 .idea/
 **/.env
 media/
-res/files/
-res/credentials.json
 *.pickle
-res/paths.csv
 **/images/
 **/embeddings/
 volumes/
-server/media/
-res/query.csv
 **/*.pkl
-server/files/
 **/__pycache__/
-server/staticfiles/
